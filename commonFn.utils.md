@@ -16,11 +16,11 @@ Calculates the start and end of the current week (Monday to Sunday) in Indian St
 
 ```mermaid
 graph TD
-    A[Start] --> B[Get Now]
-    B --> C[Calculate offset to Monday]
-    C --> D[Set weekStart = Monday 00:00]
-    D --> E[Set weekEnd = weekStart + 7 days]
-    E --> F[Return {start, end} ms]
+  A[Start] --> B[Process]
+  B --> C{Check condition}
+  C -->|Yes| D[Do something]
+  C -->|No| E[Do something else]
+  E --> F["Return {start, end} ms"]
 ```
 
 ---
